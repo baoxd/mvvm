@@ -1,0 +1,20 @@
+<div>
+	<h2>在线人员列表</h2>
+	<table class="table">
+	      <tr>
+	        <td>编号</td>
+	        <td>姓名</td>
+	        <td>电话</td>
+	        <td>年龄</td>
+	        <td>操作</td>
+	      </tr>
+	      <tr ng-repeat="user in userlist">
+	        <td>{{ user.id }}</td>
+	            <td>{{ user.name }}</td>
+	            <td>{{ user.tel }}</td>
+	            <td>{{ user.age }}</td>
+	            <td><button type="button" class="btn btn-danger" ng-click="deleteUser(user.id)" >删除</button></td>
+	      </tr>
+	</table>
+	<button class="btn btn-default " type="button" ng-click="back()">返回</button>
+</div>

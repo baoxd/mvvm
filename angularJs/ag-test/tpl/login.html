@@ -1,0 +1,12 @@
+<form action="#" class="form-signin">
+	<h2 class="form-signin-heading">请登录</h2>
+	<input type="text"  class="form-control" placeholder="编号" ng-model="id">
+	<input type="text"  class="form-control" placeholder="姓名" required autofocus ng-model="name">
+	<input type="text"  class="form-control" placeholder="电话" ng-model="tel">
+	<input type="text"  class="form-control" placeholder="年龄" ng-model="age">
+	<div class="checkbox">
+		<label><input type="checkbox" value="remember-me">记住密码</label>
+	</div>
+	<button class="btn btn-primary btn-lg btn-block" type="button" ng-click="loginTrigger()">登录</button>
+	<button class="btn btn-default  btn-lg btn-block" type="button" ng-click="back()">返回</button>
+</form>
